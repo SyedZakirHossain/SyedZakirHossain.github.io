@@ -640,13 +640,13 @@ section#info{
 	height: 150px;
 }
 .a1{
-	background-image: ("seven.png");
+	background-image: "seven.png";
 }
 .a2{
 	background-image: ("cherries.png");
 }
 .a3{
-	background-image: url("club.png");
+	background-image: ("club.png");
 }
 .a4{
 	background-image: url("diamond.png");
@@ -795,7 +795,7 @@ function toggleAudio(){
 		win.volume = 0;
 		lose.volume = 0;
 	}
-	document.getElementById("audio").src = "res/icons/audio"+(audio?"On":"Off")+".png";
+	document.getElementById("audio").src = "audio"+(audio?"On":"Off")+".png";
 }
 
 function randomInt(min, max){
