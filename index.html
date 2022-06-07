@@ -95,22 +95,22 @@ section#info{
 	
 
 .a2{
-	background-image: url("res/tiles/cherries.png");
+	background-image: url("cherries.png");
 }
 .a3{
-	background-image: url("res/tiles/club.png");
+	background-image: url("club.png");
 }
 .a4{
-	background-image: url("res/tiles/diamond.png");
+	background-image: url("diamond.png");
 }
 .a5{
-	background-image: url("res/tiles/heart.png");
+	background-image: url("heart.png");
 }
 .a6{
-	background-image: url("res/tiles/spade.png");
+	background-image: url("spade.png");
 }
 .a7{
-	background-image: url("res/tiles/joker.png");
+	background-image: url("joker.png");
 }
 </style>
 </head>
@@ -125,7 +125,7 @@ section#info{
 	</section>
 	<section onclick="doSlot()" id="Gira">START A SPIN!</section>
 	<section id="options">
-		<img src="res/icons/audioOn.png" id="audio" class="option" onclick="toggleAudio()" />
+		<img src="audioOn.png" id="audio" class="option" onclick="toggleAudio()" />
 	</section>
 </main>
 <!--section id="info">
@@ -137,10 +137,10 @@ section#info{
 
 <script>
 var doing = false;
-var spin = [new Audio("res/sounds/spin.mp3"),new Audio("res/sounds/spin.mp3"),new Audio("res/sounds/spin.mp3"),new Audio("res/sounds/spin.mp3"),new Audio("res/sounds/spin.mp3"),new Audio("res/sounds/spin.mp3"),new Audio("res/sounds/spin.mp3")];
-var coin = [new Audio("res/sounds/coin.mp3"),new Audio("res/sounds/coin.mp3"),new Audio("res/sounds/coin.mp3")]
-var win = new Audio("res/sounds/win.mp3");
-var lose = new Audio("res/sounds/lose.mp3");
+var spin = [new Audio("spin.mp3"),new Audio("spin.mp3"),new Audio("spin.mp3"),new Audio("spin.mp3"),new Audio("spin.mp3"),new Audio("spin.mp3"),new Audio("spin.mp3")];
+var coin = [new Audio("coin.mp3"),new Audio("coin.mp3"),new Audio("coin.mp3")]
+var win = new Audio("win.mp3");
+var lose = new Audio("lose.mp3");
 var audio = false;
 let status = document.getElementById("status")
 var info = true;
@@ -251,7 +251,7 @@ function toggleAudio(){
 		win.volume = 0;
 		lose.volume = 0;
 	}
-	document.getElementById("audio").src = "res/icons/audio"+(audio?"On":"Off")+".png";
+	document.getElementById("audio").src = "audio"+(audio?"On":"Off")+".png";
 }
 
 function randomInt(min, max){
