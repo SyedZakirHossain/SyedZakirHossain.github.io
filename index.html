@@ -21,10 +21,11 @@
         
         height:100%;
         background: rgb(10, 10, 10);
-       overflow:hidden;
+       overflow-y: hidden;
+    overflow-x: scroll;
         }
        h1{
-        color:rgb(236, 26, 26);
+        color:rgb(236, 236, 236);
         padding: 20px;     
 	text-align: center;    
 	    }
@@ -37,7 +38,7 @@
 	     
 	     p{
       margin:2%;   
-    color:rgb(0, 0, 0);
+    color:rgb(200, 220, 220);
    
     
                 } 
@@ -178,8 +179,9 @@
         img{
           width: 300px;
           height: 300px;
-          position: relative;
-          flex: auto;
+         
+		 object-fit: none;
+            object-position: 50px 30px;
          }
       
        
@@ -192,7 +194,7 @@
 </head>
 <body>
     <h1 >Welcome</h1>
-    <img class="img" src="d.jpg" onmouseover="play()"> 
+    <img class="image" src="d.jpg" onmouseover="play()"> 
     <div class="glowing">
         <span style = "--i:1;"></span>
         <span style = "--i:2;"></span>
